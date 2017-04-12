@@ -1,0 +1,17 @@
+spring:
+    application:
+        name: account-application
+
+configurationServer:
+    port: 9000
+
+server:
+    port: 0
+
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:${configurationServer.port}/eureka/    
+        registerWithEureka: true
+        fetchRegistry: true 
+        eurekaServerPort: ${configurationServer.port}
