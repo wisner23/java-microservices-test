@@ -9,9 +9,8 @@ server:
 
 eureka:
     client:
-        fetchRegistry: false
         registerWithEureka: false
-        enabled: true
+        fetchRegistry: false
         instance-info-replication-interval-seconds: 10
         registry-fetch-interval-seconds: 10
     dashboard:
