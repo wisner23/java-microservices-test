@@ -13,6 +13,8 @@ eureka:
         fetchRegistry: false
         instance-info-replication-interval-seconds: 10
         registry-fetch-interval-seconds: 10
+        serviceUrl:
+            defaultZone: http://localhost:${configurationServer.port}/eureka/  
     dashboard:
         path: /registry
     instance:
